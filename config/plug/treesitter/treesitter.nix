@@ -14,6 +14,7 @@ in
 {
   filetype.extension.liq = "liquidsoap";
   filetype.extension.nu = "nu";
+  filetype.extension.purs = "purescript";
 
   plugins.treesitter = {
     enable = true;

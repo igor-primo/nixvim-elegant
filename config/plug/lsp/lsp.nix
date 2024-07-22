@@ -16,6 +16,19 @@
         yamlls = {
           enable = true;
         };
+        purescriptls = {
+          enable = true;
+          autostart = true;
+          filetypes = [ "purescript" ];
+          cmd = [ "purescript-language-server" "--stdio" "--config {}" ];
+          rootDir = ''function(path)
+            local util = require("lspconfig.util")
+            if path:match("/.spago/") then
+              return nil
+            end
+            return util.root_pattern("bower.json", "psc-package.json", "spago.dhall", "flake.nix", "shell.nix")(path)
+          end'';
+        };
       };
       keymaps = {
         silent = true;

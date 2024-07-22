@@ -19,6 +19,7 @@
       nix = [ "nixpkgs-fmt" ];
       markdown = [ [ "prettierd" "prettier" ] ];
       yaml = [ "yamllint" "yamlfmt" ];
+      purescript = [ "purs-tidy" ];
     };
   };
 }
