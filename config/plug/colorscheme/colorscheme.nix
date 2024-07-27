@@ -8,7 +8,7 @@ in
       enable = true;
       setUpBar = false;
       #colorscheme = import ../../colors/${config.theme}.nix { };
-      colorscheme = "shadesmear-light";
+      colorscheme = "ashes";
     };
     gruvbox = {
       enable = false;
