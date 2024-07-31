@@ -29,6 +29,10 @@
             return util.root_pattern("bower.json", "psc-package.json", "spago.dhall", "flake.nix", "shell.nix")(path)
           end'';
         };
+        svelte = {
+          enable = true;
+          autostart = true;
+        };
       };
       keymaps = {
         silent = true;

@@ -80,5 +80,10 @@
     extraConfigLua = ''
       _G.theme = "${config.theme}"
     '';
+
+    clipboard = {
+      register = "unnamedplus";
+      providers.xclip.enable = true;
+    };
   };
 }
